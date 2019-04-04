@@ -1,0 +1,17 @@
+{application, chatex,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { chatex_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    nodefinder,
+    syn
+   ]},
+  {env,[]},
+  {modules, []},
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.

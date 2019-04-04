@@ -1,0 +1,28 @@
+{application, dcache,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { dcache_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    mnesia,
+    lager
+   ]},
+  {env,[
+    {nodes, #{
+       'node1@localhost' => 'cookie1',
+       'node2@localhost' => 'cookie2',
+       ....
+       'node2@remote.host' => 'cookie23',
+    }}
+  ]},
+  {modules, []},
+  % {start_phases, [
+  %   {connect_nodes, []}
+  % ]},
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
+
